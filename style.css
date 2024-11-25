@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F7F9FC;
+    color: #2B2D42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #3A86FF;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5em;
+}
+
+.container {
+    flex: 1;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.search-box {
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #3A86FF;
+    box-shadow: 0 0 10px rgba(58, 134, 255, 0.4);
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #8338EC;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #3A86FF;
+    box-shadow: 0 4px 12px rgba(58, 134, 255, 0.4);
+}
+
+.results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.result-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: all 0.3s;
+}
+
+.result-item:hover {
+    border-color: #FF006E;
+    box-shadow: 0 4px 12px rgba(255, 0, 110, 0.2);
+}
+
+.result-item a {
+    text-decoration: none;
+    color: #3A86FF;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.result-item a:hover {
+    color: #FF006E;
+}
+
+footer {
+    background-color: #3A86FF;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
